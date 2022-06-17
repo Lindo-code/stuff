@@ -4,7 +4,7 @@
 
 
 def student_list():
-    student_list = ['zakithikhDBN2022 - 4 April - Johannesburg Physical - seat 3', 'ddhaalJHB2022 - 2 May - Cape Town Virtual',
+    return ['zakithikhDBN2022 - 4 April - Johannesburg Physical - seat 3', 'ddhaalJHB2022 - 2 May - Cape Town Virtual',
   'thandohDBN2022 - 4 April - Phokeng Physical - seat 3', 'zaneleJHB2022 - 2 May - Durban Virtual',
   'ntobekoDBN2022 - 4 April - Phokeng Physical - seat 2', 'BusiJHB2022 - 2 May - Durban Virtual',
   'zinhlehDBN2022 - 4 April - Phokeng Physical - seat 1', 'CebiJHB2022 - 2 May - Durban Virtual',
@@ -23,7 +23,7 @@ def student_list():
   'thenjisiweDBN2022 - 4 April - Johannesburg Physical - seat 6', 'nonkonzoJHB2022 - 2 May - Cape Town Physical',
   'thethelelileDBN2022 - 4 April - Johannesburg Physical - seat 7', 'nombusoJHB2022 - 2 May - Cape Town Virtual',
   'thembiDBN2022 - 4 April - Johannesburg Physical - seat 4', 'nozizweJHB2022 - 2 May - Cape Town Virtual']
-    return student_list
+  
 
 
 def dbn_campus_students(student_list):
@@ -33,8 +33,8 @@ def dbn_campus_students(student_list):
     '''
     dbn_students = []
     for student in student_list:
-        if "durban" in student.lower().replace(" ", ""):
-            dbn_students.append(student.lower().replace(" ", ""))
+        if "Durban" in student:
+            dbn_students.append(student)
     return dbn_students
 
 
@@ -45,8 +45,8 @@ def cpt_campus_students(student_list):
     '''
     cpt_students = []
     for student in student_list:
-        if "cape" in student.lower().replace(" ", ""):
-            cpt_students.append(student.lower().replace(" ", ""))
+        if "Cape" in student:
+            cpt_students.append(student)
     return cpt_students
 
 
@@ -57,8 +57,8 @@ def jhb_campus_students(student_list):
     '''
     jhb_students = []
     for student in student_list:
-        if "johannesburg" in student.lower().replace(" ", ""):
-            jhb_students.append(student.lower().replace(" ", ""))
+        if "Johannesburg" in student:
+            jhb_students.append(student)
     return jhb_students
 
 
@@ -69,8 +69,8 @@ def nw_campus_students(student_list):
     '''
     nw_students = []
     for student in student_list:
-        if "phokeng" in student.lower().replace(" ", ""):
-            nw_students.append(student.lower().replace(" ", ""))
+        if "Phokeng" in student:
+            nw_students.append(student)
     return nw_students
 
 
@@ -81,8 +81,8 @@ def dbn_physical_students(dbn_students):
     '''
     dbn_physical_students = []
     for student in dbn_students:
-        if "physical" in student.lower().replace(" ", ""):
-            dbn_physical_students.append(student.lower().replace(" ", ""))
+        if "Physical" in student:
+            dbn_physical_students.append(student)
     return dbn_physical_students
 
 
@@ -113,8 +113,8 @@ def cpt_physical_students(cape_physical_students):
     '''
     cpt_physical_students = []
     for student in cape_physical_students:
-        if "physical" in student.lower().replace(" ", ""):
-            cpt_physical_students.append(student.lower().replace(" ", ""))
+        if "Physical" in student:
+            cpt_physical_students.append(student)
     return cpt_physical_students
 
 
@@ -145,8 +145,8 @@ def jhb_physical_students(joburg_physical_students):
     '''
     jhb_physical_students = []
     for student in joburg_physical_students:
-        if "physical" in student.lower().replace(" ", ""):
-            jhb_physical_students.append(student.lower().replace(" ", ""))
+        if "Physical" in student:
+            jhb_physical_students.append(student)
     return jhb_physical_students
 
 
@@ -176,8 +176,8 @@ def nw_physical_students(nwest_physical_students):
     '''
     nw_physical_students = []
     for student in nwest_physical_students:
-        if "physical" in student.lower().replace(" ", ""):
-            nw_physical_students.append(student.lower().replace(" ", ""))
+        if "Physical" in student:
+            nw_physical_students.append(student)
     return nw_physical_students
 
 
@@ -208,7 +208,7 @@ def get_virtual_students(student_list):
     '''
     virtual_campus = []
     for student in student_list:
-        if "virtual" in student.lower().replace(" ", ""):
+        if "Virtual" in student:
             virtual_campus.append(student)
     return virtual_campus
 
